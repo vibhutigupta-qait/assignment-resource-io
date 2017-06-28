@@ -36,7 +36,8 @@ public class Team {
     	
         this.name = myMap.get("name").toString();
         this.id = Integer.parseInt(myMap.get("id").toString());
-        this.members = new ArrayList<Individual>();
+        this.members = (List<Individual>) teamMap.get("members");
+        
        
         	}
         

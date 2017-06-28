@@ -252,6 +252,7 @@ public class TeamsJsonReader{
     			individualList1.add(reader.getIndividualById(((Long)memberArray.get(j)).intValue()));
     	            		
     		}
+    		System.out.println("team: "+individualList1);
 
     		teamMap.put("members", individualList1);
     		teamList1.add(new Team(teamMap));
