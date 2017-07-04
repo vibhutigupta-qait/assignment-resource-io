@@ -26,7 +26,7 @@ public class TeamsYamlReaderTest {
     
     @Test
     public void getListOfIndividuals_should_return_array_list_of_all_individual_objects()
-            throws IOException{
+            throws IOException, ParseException{
         
         assertThat(teamReader.getListOfIndividuals().size()).isEqualTo(5);
         assertThat(teamReader.getListOfIndividuals().get(0).getName())
@@ -71,7 +71,7 @@ public class TeamsYamlReaderTest {
             throws ObjectNotFoundException{
         
         teamReader.getIndividualById(100);
-    }
+}
     
     /* tests for getIndividualByName(String name) */
     @Test
@@ -90,6 +90,7 @@ public class TeamsYamlReaderTest {
     }
     
     @Test
+    //throw new UnsupportedOperationException("Not implemented.");
     public void getListOfTeams_should_return_a_list_if_Team_object_from_db_json() throws FileNotFoundException, IOException, ParseException{
         
         assertThat(teamReader.getListOfTeams().size()).isEqualTo(2);

@@ -83,7 +83,9 @@ public class TeamsJsonReader{
 			listindividuals.add(obj1);
 			
 		}
+		System.out.println(listindividuals.size());
 		return listindividuals;
+		
 		
 			        
     }
@@ -91,7 +93,7 @@ public class TeamsJsonReader{
     /**
      * get individual object by id
      * 
-     * @param id individual idteamMap.put("members", individualList);
+     * @param id individual idteamMap.put("members", igetListOfTeams_should_return_a_list_if_Team_object_from_db_jsonndividualList);
 		teamList.add(new Team(teamMap));
      * @return 
      * @throws com.qainfotech.tap.training.resourceio.exceptions.ObjectNotFoundException 
@@ -123,7 +125,7 @@ public class TeamsJsonReader{
      * get individual object by nameJSONParser a = new JSONParser();
      * 
      * @param name
-     * @return 
+     * @return getListOfTeams_should_return_a_list_if_Team_object_from_db_json
      * @throws com.qainfotech.tap.training.resourceio.exceptions.ObjectNotFoundException 
      */
     public Individual getIndividualByName(String name) throws ObjectNotFoundException {
@@ -188,7 +190,7 @@ public class TeamsJsonReader{
      * @throws ObjectNotFoundException 
      */
     public List<Individual> getListOfActiveIndividuals() {
-        //throw new UnsupportedOperationException("Not implemented.");
+        //throw new UnsupportedOperationException("NotgetListOfTeams_should_return_a_list_if_Team_object_from_db_json implemented.");
     	try
         {
         	if(this.getListOfIndividuals()==null)
@@ -252,13 +254,13 @@ public class TeamsJsonReader{
     			individualList1.add(reader.getIndividualById(((Long)memberArray.get(j)).intValue()));
     	            		
     		}
-    		System.out.println("team: "+individualList1);
+    		//System.out.println("team: "+individualList1);
 
     		teamMap.put("members", individualList1);
     		teamList1.add(new Team(teamMap));
     		
     	}
-    	//System.out.println(teamList1.size()+"yyyyyyyyyyyyyy");
+    	
     	return teamList1;
     	}
     	catch(Exception e)

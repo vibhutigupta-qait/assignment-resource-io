@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="9" total="10" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="86" started-at="2017-06-30T05:43:48Z" finished-at="2017-06-30T05:43:49Z">
+  <suite name="Default suite" duration-ms="180" started-at="2017-07-04T09:07:10Z" finished-at="2017-07-04T09:07:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="86" started-at="2017-06-30T05:43:48Z" finished-at="2017-06-30T05:43:49Z">
-      <class name="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest">
-        <test-method status="PASS" signature="loadDB()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest@9629756]" name="loadDB" is-config="true" duration-ms="8" started-at="2017-06-30T11:13:48Z" finished-at="2017-06-30T11:13:49Z">
+    <test name="Default test" duration-ms="180" started-at="2017-07-04T09:07:10Z" finished-at="2017-07-04T09:07:10Z">
+      <class name="com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest">
+        <test-method status="PASS" signature="loadDB()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@9629756]" name="loadDB" is-config="true" duration-ms="49" started-at="2017-07-04T14:37:10Z" finished-at="2017-07-04T14:37:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadDB -->
-        <test-method status="PASS" signature="getIndividualById_should_return_Individual_object_matching_id()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest@9629756]" name="getIndividualById_should_return_Individual_object_matching_id" duration-ms="65" started-at="2017-06-30T11:13:49Z" finished-at="2017-06-30T11:13:49Z">
+        <test-method status="PASS" signature="getListOfTeams_should_return_a_list_if_Team_object_from_db_json()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@9629756]" name="getListOfTeams_should_return_a_list_if_Team_object_from_db_json" duration-ms="112" started-at="2017-07-04T14:37:10Z" finished-at="2017-07-04T14:37:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getIndividualById_should_return_Individual_object_matching_id -->
-      </class> <!-- com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest -->
+        </test-method> <!-- getListOfTeams_should_return_a_list_if_Team_object_from_db_json -->
+      </class> <!-- com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
