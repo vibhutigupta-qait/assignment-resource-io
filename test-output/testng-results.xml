@@ -1,17 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="9" total="10" passed="1">
+<testng-results skipped="0" failed="2" ignored="0" total="10" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="180" started-at="2017-07-04T09:07:10Z" finished-at="2017-07-04T09:07:10Z">
+  <suite name="Default suite" duration-ms="350" started-at="2017-07-04T12:17:11Z" finished-at="2017-07-04T12:17:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="180" started-at="2017-07-04T09:07:10Z" finished-at="2017-07-04T09:07:10Z">
+    <test name="Default test" duration-ms="350" started-at="2017-07-04T12:17:11Z" finished-at="2017-07-04T12:17:11Z">
       <class name="com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest">
-        <test-method status="PASS" signature="loadDB()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@9629756]" name="loadDB" is-config="true" duration-ms="49" started-at="2017-07-04T14:37:10Z" finished-at="2017-07-04T14:37:10Z">
+        <test-method status="PASS" signature="loadDB()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@5034c75a]" name="loadDB" is-config="true" duration-ms="71" started-at="2017-07-04T17:47:11Z" finished-at="2017-07-04T17:47:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadDB -->
-        <test-method status="PASS" signature="getListOfTeams_should_return_a_list_if_Team_object_from_db_json()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@9629756]" name="getListOfTeams_should_return_a_list_if_Team_object_from_db_json" duration-ms="112" started-at="2017-07-04T14:37:10Z" finished-at="2017-07-04T14:37:10Z">
+        <test-method status="PASS" signature="Team_getActiveMembers_should_return_a_list_of_team_members_that_are_active()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@5034c75a]" name="Team_getActiveMembers_should_return_a_list_of_team_members_that_are_active" duration-ms="100" started-at="2017-07-04T17:47:11Z" finished-at="2017-07-04T17:47:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Team_getActiveMembers_should_return_a_list_of_team_members_that_are_active -->
+        <test-method status="PASS" signature="Team_getInactiveMembers_should_return_a_list_of_individual_team_members_that_are_inactive()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@5034c75a]" name="Team_getInactiveMembers_should_return_a_list_of_individual_team_members_that_are_inactive" duration-ms="44" started-at="2017-07-04T17:47:11Z" finished-at="2017-07-04T17:47:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Team_getInactiveMembers_should_return_a_list_of_individual_team_members_that_are_inactive -->
+        <test-method status="PASS" signature="getIndividualById_should_return_Individual_object_matching_id()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@5034c75a]" name="getIndividualById_should_return_Individual_object_matching_id" duration-ms="8" started-at="2017-07-04T17:47:11Z" finished-at="2017-07-04T17:47:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getIndividualById_should_return_Individual_object_matching_id -->
+        <test-method status="FAIL" signature="getIndividualById_should_throw_ObjectNotFoundException_for_incorrect_id()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@5034c75a]" name="getIndividualById_should_throw_ObjectNotFoundException_for_incorrect_id" duration-ms="2" started-at="2017-07-04T17:47:11Z" finished-at="2017-07-04T17:47:11Z">
+          <exception class="org.testng.TestException">
+            <message>
+              <![CDATA[
+Method TeamsYamlReaderTest.getIndividualById_should_throw_ObjectNotFoundException_for_incorrect_id()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@5034c75a] should have thrown an exception of type class com.qainfotech.tap.training.resourceio.exceptions.ObjectNotFoundException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestException: 
+Method TeamsYamlReaderTest.getIndividualById_should_throw_ObjectNotFoundException_for_incorrect_id()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@5034c75a] should have thrown an exception of type class com.qainfotech.tap.training.resourceio.exceptions.ObjectNotFoundException
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:89)
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1416)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:695)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getIndividualById_should_throw_ObjectNotFoundException_for_incorrect_id -->
+        <test-method status="PASS" signature="getIndividualByName_should_return_Individual_object_matching_name()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@5034c75a]" name="getIndividualByName_should_return_Individual_object_matching_name" duration-ms="12" started-at="2017-07-04T17:47:11Z" finished-at="2017-07-04T17:47:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getIndividualByName_should_return_Individual_object_matching_name -->
+        <test-method status="FAIL" signature="getIndividualByName_should_throw_ObjectNotFoundException_for_incorrect_name()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@5034c75a]" name="getIndividualByName_should_throw_ObjectNotFoundException_for_incorrect_name" duration-ms="2" started-at="2017-07-04T17:47:11Z" finished-at="2017-07-04T17:47:11Z">
+          <exception class="org.testng.TestException">
+            <message>
+              <![CDATA[
+Method TeamsYamlReaderTest.getIndividualByName_should_throw_ObjectNotFoundException_for_incorrect_name()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@5034c75a] should have thrown an exception of type class com.qainfotech.tap.training.resourceio.exceptions.ObjectNotFoundException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestException: 
+Method TeamsYamlReaderTest.getIndividualByName_should_throw_ObjectNotFoundException_for_incorrect_name()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@5034c75a] should have thrown an exception of type class com.qainfotech.tap.training.resourceio.exceptions.ObjectNotFoundException
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:89)
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1416)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:695)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getIndividualByName_should_throw_ObjectNotFoundException_for_incorrect_name -->
+        <test-method status="PASS" signature="getListOfActiveIndividuals_ahould_return_array_list_of_only_active_individual_objects()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@5034c75a]" name="getListOfActiveIndividuals_ahould_return_array_list_of_only_active_individual_objects" duration-ms="3" started-at="2017-07-04T17:47:11Z" finished-at="2017-07-04T17:47:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getListOfActiveIndividuals_ahould_return_array_list_of_only_active_individual_objects -->
+        <test-method status="PASS" signature="getListOfInactiveIndividuals_should_return_array_list_of_only_inactive_individual_objects()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@5034c75a]" name="getListOfInactiveIndividuals_should_return_array_list_of_only_inactive_individual_objects" duration-ms="4" started-at="2017-07-04T17:47:11Z" finished-at="2017-07-04T17:47:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getListOfInactiveIndividuals_should_return_array_list_of_only_inactive_individual_objects -->
+        <test-method status="PASS" signature="getListOfIndividuals_should_return_array_list_of_all_individual_objects()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@5034c75a]" name="getListOfIndividuals_should_return_array_list_of_all_individual_objects" duration-ms="13" started-at="2017-07-04T17:47:11Z" finished-at="2017-07-04T17:47:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getListOfIndividuals_should_return_array_list_of_all_individual_objects -->
+        <test-method status="PASS" signature="getListOfTeams_should_return_a_list_if_Team_object_from_db_json()[pri:0, instance:com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest@5034c75a]" name="getListOfTeams_should_return_a_list_if_Team_object_from_db_json" duration-ms="34" started-at="2017-07-04T17:47:11Z" finished-at="2017-07-04T17:47:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getListOfTeams_should_return_a_list_if_Team_object_from_db_json -->

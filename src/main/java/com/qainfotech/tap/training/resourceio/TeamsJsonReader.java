@@ -49,18 +49,10 @@ public class TeamsJsonReader{
     	
     	JSONObject obj;
     	
-   // try{
-           obj = (JSONObject) s.parse(new FileReader("src/main/resources/db.json"));
-    	//}
-    	//catch(org.json.simple.parser.ParseException e)
-        //{
-    		
-    	//}
+   
+        obj = (JSONObject) s.parse(new FileReader("src/main/resources/db.json"));
     	
-      // JSONObject jsonObject = (JSONObject) obj;
-
-		
-		JSONArray second = (JSONArray) obj.get("individuals");
+        JSONArray second = (JSONArray) obj.get("individuals");
 
 		Individual obj1;
 		JSONObject myobj;
@@ -235,7 +227,7 @@ public class TeamsJsonReader{
     	JSONObject jsonFile = (JSONObject) (new JSONParser()).parse(new FileReader("src/main/resources/db.json"));
     	JSONArray teamArray = new JSONArray();
     	teamArray = (JSONArray) jsonFile.get("teams");
-    	List<Team>       teamList1       = new ArrayList<>();
+    	List<Team>   teamList1  = new ArrayList<>();
     	TeamsJsonReader reader = new TeamsJsonReader();
     	
     	for(int i=0;i<teamArray.size();i++)

@@ -34,6 +34,7 @@ public class TeamsYamlReader{
 	List<Individual> notactive = new ArrayList<Individual>();
 	List<Team> teamlist = new ArrayList<Team>();
 	public List<Individual> getListOfIndividuals(){
+		listindividual.clear();
         //throw new UnsupportedOperationException("Not implemented.");
 		Individual obj1;
 		
@@ -211,7 +212,7 @@ public class TeamsYamlReader{
 		      ArrayList list = (ArrayList) a.get("members");
 		      
 		     for(int j=0;j<list.size();j++){
-		    	 memberlist.add(list.get(j));	 
+		    	 memberlist.add(this.getIndividualById(Integer.parseInt(list.get(j).toString())));	 
 		     }
 		     
 		     b.put("members", memberlist);
